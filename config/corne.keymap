@@ -21,6 +21,11 @@
             bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <20 21>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <22 23>;
+        };
     };
 
     keymap {
