@@ -36,6 +36,11 @@
             bindings = <&kp LEFT_WIN>;
             key-positions = <28 27>;
         };
+
+        second_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <21 22>;
+        };
     };
 
     keymap {
