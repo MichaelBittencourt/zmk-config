@@ -7,6 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
+
 
 / {
     combos {
@@ -40,6 +42,16 @@
         second_enter {
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
+        };
+
+        mouse_scroll_up {
+            bindings = <&mmv SCROLL_UP>;
+            key-positions = <15 16>;
+        };
+
+        mouse_scroll_down {
+            bindings = <&mmv SCROLL_DOWN>;
+            key-positions = <27 28>;
         };
     };
 
@@ -94,8 +106,8 @@
         mouse_layer {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &mmv MOVE_UP  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp RCLK  &trans   &trans   &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
