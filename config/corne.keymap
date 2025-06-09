@@ -57,6 +57,11 @@
             bindings = <&kp CLCK>;
             key-positions = <12 13>;
         };
+
+        delete {
+            bindings = <&kp DEL>;
+            key-positions = <10 11>;
+        };
     };
 
     keymap {
